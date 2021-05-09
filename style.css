@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #232323;
+}
+
+/*Titre animation*/
+.container {
+    width: 100%;
+    height: 100%;
+    background: #232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .box {
+    margin: 15vh 0;
+    width: 705px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .box .title {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.container .box .title .block {
+    width: 0%;
+    height: 80px;
+    background: #ffb510;
+    position: absolute;
+    animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    display: flex;
+}
+
+.container .box .title h1 {
+    font-family: "Poppins";
+    color: #fff;
+    font-size: 70px;
+    animation: mainFadeIn 2s forwards;
+    animation-delay: 1.6s;
+    opacity: 0;
+    display: flex;
+    align-items: baseline;
+    position: relative;
+}
+
+.container .box .title h1 span {
+    /* Point jaune */
+    width: 0px;
+    height: 0px;
+    border-width: 4px;
+    border-radius: 50%;
+    background: #ffb510;
+    animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation-delay: 2s;
+    margin-left: 5px;
+    margin-top: -10px;
+    position: absolute;
+    bottom: 13px;
+    right: -12px;
+}
+
+
+.container .box .role {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.container .box .role .block {
+    width: 0%;
+    height: inherit;
+    background: #e91e63;
+    position: absolute;
+    animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation-delay: 2s;
+    display: flex;
+}
+
+.container .box .role p {
+    animation: secFadeIn 2s forwards;
+    animation-delay: 3.2s;
+    opacity: 0;
+    font-weight: 400;
+    font-family: "Lato";
+    color: #ffffff;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+
+@keyframes mainBlock {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes secBlock {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes mainFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        width: 0px;
+        /*Taille*/
+        height: 0px;
+        background: #e9d856;
+        border: 0px solid #ddd;
+        opacity: 0;
+    }
+
+    50% {
+        width: 15px;
+        height: 15px;
+        background: #e9d856;
+        opacity: 1;
+        bottom: 60px;
+        /*Rebound*/
+    }
+
+    65% {
+        width: 12px;
+        height: 12px;
+        bottom: 15px;
+    }
+
+    80% {
+        width: 15px;
+        height: 15px;
+        bottom: 35px;
+    }
+
+    100% {
+        width: 12px;
+        height: 12px;
+        background: #e9d856;
+        border: 0px solid #222;
+        bottom: 28px;
+    }
+}
+
+@keyframes secFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+/*Titre animation*/
+/*Nav*/
+nav {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    background-color: #232323f6;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+    font-size: 1.6em;
+    font-family: "Poppins";
+    margin: 5px;
+}
+
+nav a h2 {
+    color: white;
+    font-family: "Poppins";
+    background-color: #e9d856;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px 5px;
+    font-size: 1.6em;
+}
+
+/*Nav*/
+/*A propos*/
+
+.aPropos img {
+    width: 20vw;
+    height: 100%;
+}
+
+.aPropos h2 {
+    font-family: "Poppins";
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: white;
+}
+
+.aPropos div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    ;
+}
+
+.aPropos table {
+    color: white;
+    font-family: "Poppins";
+    font-size: 1.3em;
+}
+
+.aPropos table tr td:nth-child(1) {
+    padding-right: 15vw;
+}
+
+.aPropos {
+    margin: 0 15vw 5vh;
+    padding: 15px;
+    background: #363636;
+}
+
+/*A propos*/
+/*formation*/
+.formation {
+    margin: 0 15vw 5vh;
+    padding: 15px;
+    background: #363636;
+}
+
+.formation h2 {
+    font-family: "Poppins";
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: white;
+}
+
+.formation div h2 {
+    margin: 0 10vw;
+    width: 100px;
+}
+
+.formation ul {
+    margin-left: 7vw;
+}
+
+.formation div:nth-child(4) {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+.formation div:nth-child(3) {
+    margin-top: 3vh;
+}
+
+.formation div {
+    color: white;
+    display: flex;
+
+}
+
+.formation p,
+.formation h3 {
+    color: white;
+    font-family: "Poppins";
+    font-size: 1.2em;
+}
+
+.formation div div {
+    display: block;
+}
+
+/*formation*/
+/*Projet*/
+.projet {
+    margin: 0 15vw 5vh;
+    padding: 15px;
+    background: #363636;
+}
+
+.projet h2 {
+    font-family: "Poppins";
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: white;
+}
+
+.projet div h2 {
+    margin: 0 10vw;
+    width: 100px;
+}
+
+.projet img {
+    width: 10vw;
+    height: 10vw;
+    margin: 0 10vw;
+}
+
+.projet div {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projet p,
+.projet h3 {
+    color: white;
+    font-family: "Poppins";
+    font-size: 1.2em;
+}
+
+.projet div div {
+    display: block;
+}
+
+/*Projet*/
+/*Compétence*/
+.competence {
+    margin: 0 15vw 5vh;
+    padding: 15px;
+    background: #363636;
+}
+
+.competence h2 {
+    font-family: "Poppins";
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: white;
+}
+
+.competence img {
+    width: 10vw;
+    height: 10vw;
+}
+
+.competence div {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.competence figcaption {
+    color: white;
+    font-family: "Poppins";
+    font-size: 1.4em;
+    text-align: center;
+}
+.competence figure {
+    margin-bottom:5vh;
+}
