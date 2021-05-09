@@ -9,6 +9,10 @@ body {
     background: #232323;
 }
 
+.first{
+    border-color:#ffb510;
+}
+
 /*Titre animation*/
 .container {
     width: 100%;
@@ -266,7 +270,7 @@ nav a h2 {
 }
 
 .aPropos {
-    margin: 0 15vw 5vh;
+    margin: 0 10vw 5vh;
     padding: 1.5vh;
     background: #363636;
 }
@@ -274,7 +278,7 @@ nav a h2 {
 /*A propos*/
 /*formation*/
 .formation {
-    margin: 0 15vw 5vh;
+    margin: 0 10vw 5vh;
     padding: 1.5vh;
     background: #363636;
 }
@@ -324,7 +328,7 @@ nav a h2 {
 /*formation*/
 /*Projet*/
 .projet {
-    margin: 0 15vw 5vh;
+    margin: 0 10vw 5vh;
     padding: 1.5vh;
     background: #363636;
 }
@@ -344,20 +348,23 @@ nav a h2 {
 .projet img {
     width: 10vw;
     height: 10vw;
+    min-width: 120px;
+    min-height: 120px;
     margin: 0 10vw;
 }
 
 .projet div {
     color: white;
     display: flex;
-    justify-content: space-between;
+
+    align-items: center;
 }
 
 .projet p,
 .projet h3 {
     color: white;
     font-family: "Poppins";
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .projet div div {
@@ -367,7 +374,7 @@ nav a h2 {
 /*Projet*/
 /*Compétence*/
 .competence {
-    margin: 0 15vw 5vh;
+    margin: 0 10vw 5vh;
     padding: 1.5vh;
     background: #363636;
 }
@@ -406,7 +413,7 @@ nav a h2 {
 /*Compétence*/
 /*Loisir*/  
 .loisir {
-    margin: 0 15vw 5vh;
+    margin: 0 10vw 5vh;
     padding: 2vh;
     background: #363636;
 }
@@ -427,6 +434,7 @@ nav a h2 {
     font-family: "Poppins";
     font-size: 2em;
     margin-left: 5vw;
+    margin-bottom: 2vh;
 }
 .loisir  div {
     color: white;
