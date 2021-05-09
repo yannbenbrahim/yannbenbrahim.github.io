@@ -267,7 +267,7 @@ nav a h2 {
 
 .aPropos {
     margin: 0 15vw 5vh;
-    padding: 15px;
+    padding: 1.5vh;
     background: #363636;
 }
 
@@ -275,7 +275,7 @@ nav a h2 {
 /*formation*/
 .formation {
     margin: 0 15vw 5vh;
-    padding: 15px;
+    padding: 1.5vh;
     background: #363636;
 }
 
@@ -325,7 +325,7 @@ nav a h2 {
 /*Projet*/
 .projet {
     margin: 0 15vw 5vh;
-    padding: 15px;
+    padding: 1.5vh;
     background: #363636;
 }
 
@@ -368,7 +368,7 @@ nav a h2 {
 /*Compétence*/
 .competence {
     margin: 0 15vw 5vh;
-    padding: 15px;
+    padding: 1.5vh;
     background: #363636;
 }
 
@@ -398,5 +398,44 @@ nav a h2 {
     text-align: center;
 }
 .competence figure {
-    margin-bottom:5vh;
+    margin:2vh;
+    display:flex;
+    flex-direction: column;    
+    align-items: center;
 }
+/*Compétence*/
+/*Loisir*/  
+.loisir {
+    margin: 0 15vw 5vh;
+    padding: 2vh;
+    background: #363636;
+}
+
+.loisir  h2 {
+    font-family: "Poppins";
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: white;
+}
+
+.loisir  img {
+    width: 10vw;
+    height: 10vw;
+}
+.loisir p {
+    color: white;
+    font-family: "Poppins";
+    font-size: 2em;
+    margin-left: 5vw;
+}
+.loisir  div {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.loisir img{
+    width:100%;
+    height:100%;
+}
+/*Loisir*/
